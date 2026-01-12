@@ -1,11 +1,11 @@
 {
   "name": "webcrawler-http",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple HTTP web crawler built with Node.js",
   "main": "main.js",
   "scripts": {
     "start": "node main.js",
-    "test": "jest"
+    "test": "jest --runInBand --detectOpenHandles"
   },
   "repository": {
     "type": "git",
@@ -17,10 +17,13 @@
     "url": "https://github.com/aosafmohd/WebCrawler-HTTP/issues"
   },
   "homepage": "https://github.com/aosafmohd/WebCrawler-HTTP#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "devDependencies": {
     "jest": "^30.2.0"
   },
   "dependencies": {
-    "jsdom": "^27.4.0"
+    "jsdom": "^20.0.0"
   }
 }
